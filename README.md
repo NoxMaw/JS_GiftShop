@@ -1,6 +1,6 @@
 # GiftShop
 
-Dynamic loading of images in a static website using vanilla JS and HTML. GiftShop dynamically loads images on a static website, addressing the challenge of displaying 1000+ images without manually coding each filename.
+Dynamic loading of images in a static website using vanilla JS and HTML. GiftShop dynamically loads images on a static website, addressing the challenge of displaying 1000+ images without manually coding each filename. Needlees to say, this webpage has no backend, as such all of the processing is being done user-side.
 
 There is no particular reason as to why this script exists besides the fact that I wanted to make it, my objective was to be able to load 1000+ images on a static website without the need to manually write each filename individually, it got written in vanilla JS for practicing purposes.
 
