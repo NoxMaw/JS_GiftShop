@@ -9,6 +9,9 @@ Slow (Safe) Version Demo [here](https://oldcore.neocities.org/giftshop)
 
 Fast (Unsafe) Version Demo [here](https://oldcore.neocities.org/Giftshop2)
 
+
+## Further info...
+
 The script works by initially loading a specified number of images or resources in response to user actions, such as clicking on navigation buttons. This method reduces the initial load time and bandwidth usage by avoiding the loading of all images at once.
 
 For demonstration purposes, the current implementation utilizes buttons to trigger the loading of images. Users can click these buttons to load images from specified directories and formats, simulating a dynamic content loading experience on a static page.
