@@ -23,7 +23,8 @@ The current implementation is very slow due to the use of await within the main 
 
 The rationale behind this approach is that each image must undergo a verification process before being displayed, to ensure it exists before being shown. There are better implementation methods that could be used, however for demonstration purposes, this script has been shipped as it is.
 
-A simple way to greatly speed-up the process of loading the images is to remove the verification process, however if such task is to be done, one must ensure that all image files exist, otherwise the script will load broken images.
+A simple way to greatly speed-up the process of loading the images is to remove the verification process, however if such task is to be done, one must ensure that all image files exist, otherwise the script will load broken images. It is perfectly possible to avoid broken images by defining a hard limit for the quantity of images displayed per page, however the point of this project is to automate a menial task.
+A hybrid model of the two systems is also possible, however said system falls outside the scope of this repo.
 
 Beware, this script makes a lot of requests, do not
 abuse it! It makes 1 request per item displayed
