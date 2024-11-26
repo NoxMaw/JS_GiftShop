@@ -1,12 +1,23 @@
 # GiftShop
 
-Dynamic loading of images in a static website using vanilla JS and HTML.
+Dynamic loading of images in a static website using vanilla JS and HTML. GiftShop dynamically loads images on a static website, addressing the challenge of displaying 1000+ images without manually coding each filename.
+
+There is no particular reason as to why this script exists besides the fact that I wanted to make it, my objective was to be able to load 1000+ images on a static website without the need to manually write each filename individually, it got written in vanilla JS for practicing purposes.
+
+You can see a demo [here](https://oldcore.neocities.org/giftshop)
 
 The script works by initially loading a specified number of images or resources in response to user actions, such as clicking on navigation buttons. This method reduces the initial load time and bandwidth usage by avoiding the loading of all images at once.
 
-For demonstration purposes, the current implementation utilizes buttons to trigger the loading of images. Users can click these buttons to load images from specified directories and formats, simulating a dynamic content loading experience on a static page. Each button fetches a new set of images, allowing for a customizable and flexible way to showcase content.
+For demonstration purposes, the current implementation utilizes buttons to trigger the loading of images. Users can click these buttons to load images from specified directories and formats, simulating a dynamic content loading experience on a static page.
 
-You can see a demo [here](https://oldcore.neocities.org/giftshop)
+It is important to note that this script is not particularly fast, because it first makes sure the image actually exists before attempting to display it.
+
+### Performance Overview
+The current implementation is very slow due to the use of await within the main loop that checks each file ensures that operations are executed in order.
+
+The rationale behind this approach is that each image must undergo a verification process before being displayed, to ensure it exists before being shown. There are better implementation methods that could be used, however for demonstration purposes, this script has been shipped as it is.
+
+A simple way to greatly speed-up the process of loading the images is to remove the verification process, however if such task is to be done, one must ensure that all image files exist, otherwise the script will load broken images.
 
 Beware, this script makes a lot of requests, do not
 abuse it! It makes 1 request per item displayed
