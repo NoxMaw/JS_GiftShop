@@ -4,7 +4,9 @@ Dynamic loading of images in a static website using vanilla JS and HTML. GiftSho
 
 There is no particular reason as to why this script exists besides the fact that I wanted to make it, my objective was to be able to load 1000+ images on a static website without the need to manually write each filename individually, it got written in vanilla JS for practicing purposes.
 
+### Demo
 Slow (Safe) Version Demo [here](https://oldcore.neocities.org/giftshop)
+
 Fast (Unsafe) Version Demo [here](https://oldcore.neocities.org/Giftshop2)
 
 The script works by initially loading a specified number of images or resources in response to user actions, such as clicking on navigation buttons. This method reduces the initial load time and bandwidth usage by avoiding the loading of all images at once.
