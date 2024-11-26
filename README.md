@@ -33,44 +33,43 @@ that's an INSANE amount of requests!
 
 The script saves previously loaded images in local storage to retrieve them later to reduce the number of requests made.
 
-  The script will make at most as many requests
-  as 'itemsPerPage' is set to.
-  By default it is set at 25 items per page, meaning
-  that at most the script will make 25 requests at once.
+ The script will make at most as many requests as 'itemsPerPage' is set to. By default, it is set to 25 items per page, meaning that at most the script will make 25 requests at once.
 
-  ### Instructions:
-Script must be linked at the very bottom of the page.
+### Instructions:
+The script must be linked at the very bottom of the page.
 
-Images are loaded as such:
- 
- ```html
- <div id="loading" style="display: none;"><p><img src="LinkToYourLoadingGifHere" alt="Loading..."><br>loading...</p></div>
- ```
+Images are loaded as follows:
+
+```html
+<div id="loading" style="display: none;"><p><img src="LinkToYourLoadingGifHere" alt="Loading..."><br>loading...</p></div>
+```
 
 You will need a content div (where the images/text will be written):
- ```html
- <div id="content">OptionalPlaceholder</div>
- ```
 
-You will need navigation buttons like this (you can hide them with display:none, but never delete it)
- ```html
- <div id="pagination" style="display: block;"><button id="prevButton">Previous</button><button id="nextButton">Next</button></div>
- ```
+```html
+<div id="content">OptionalPlaceholder</div>
+```
 
- Retrieving data:
- The buttons that load the data look like this:
- ```html
- <button  data-directory="Resources" data-folder="Icons" data-format="ICO" id="ButtonC" data-files="691">Written</button>
- ```
+You will need navigation buttons like this (you can hide them with `display: none`, but never delete them):
 
- Basically think of this like this:
- 
- YourSite/data-directory/data-folder/Written/X.ICO
- 
- X is a number from 1 to 'data-files', for example, if you use the button as it is now it will try to load the following
- files:
- - YourSite/Resources/Icons/Written/1.ICO
- - YourSite/Resources/Icons/Written/2.ICO
- - YourSite/Resources/Icons/Written/3.ICO
- - ... ... ... ...
- - YourSite/Resources/Icons/Written/691.ICO
+```html
+<div id="pagination" style="display: block;"><button id="prevButton">Previous</button><button id="nextButton">Next</button></div>
+```
+
+Retrieving data:
+The buttons that load the data look like this:
+
+```html
+<button  data-directory="Resources" data-folder="Icons" data-format="ICO" id="ButtonC" data-files="691">Written</button>
+```
+
+Basically think of this like this:
+
+`YourSite/data-directory/data-folder/Written/X.ICO`
+
+`X` is a number from 1 to 'data-files'. For example, if you use the button as it is now, it will try to load the following files:
+- `YourSite/Resources/Icons/Written/1.ICO`
+- `YourSite/Resources/Icons/Written/2.ICO`
+- `YourSite/Resources/Icons/Written/3.ICO`
+- ...
+- `YourSite/Resources/Icons/Written/691.ICO`
