@@ -1,5 +1,7 @@
-
 # GiftShop
+
+Dynamic loading of images in a static website using vanilla JS and HTML.
+
 You can see a demo [here](https://oldcore.neocities.org/giftshop)
 
 Beware, this script makes a lot of requests, do not
