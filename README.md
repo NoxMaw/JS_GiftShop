@@ -19,23 +19,23 @@ Script must be linked at the very bottom of the page.
 
 Images are loaded as such:
  
- ```http
- <div id="loading" style="display: none;"><p><img src="LinkToYourLoadingGifHere" alt="Loading..."><br>loading...</p>
+ ```html
+ <div id="loading" style="display: none;"><p><img src="LinkToYourLoadingGifHere" alt="Loading..."><br>loading...</p></div>
  ```
 
 You will need a content div (where the images/text will be written):
- ```http
+ ```html
  <div id="content">OptionalPlaceholder</div>
  ```
 
 You will need navigation buttons like this (you can hide them with display:none, but never delete it)
- ```http
+ ```html
  <div id="pagination" style="display: block;"><button id="prevButton">Previous</button><button id="nextButton">Next</button></div>
  ```
 
  Retrieving data:
  The buttons that load the data look like this:
- ```http
+ ```html
  <button  data-directory="Resources" data-folder="Icons" data-format="ICO" id="ButtonC" data-files="691">Written</button>
  ```
 
