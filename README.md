@@ -2,6 +2,10 @@
 
 Dynamic loading of images in a static website using vanilla JS and HTML.
 
+The script works by initially loading a specified number of images or resources in response to user actions, such as clicking on navigation buttons. This method reduces the initial load time and bandwidth usage by avoiding the loading of all images at once.
+
+For demonstration purposes, the current implementation utilizes buttons to trigger the loading of images. Users can click these buttons to load images from specified directories and formats, simulating a dynamic content loading experience on a static page. Each button fetches a new set of images, allowing for a customizable and flexible way to showcase content.
+
 You can see a demo [here](https://oldcore.neocities.org/giftshop)
 
 Beware, this script makes a lot of requests, do not
